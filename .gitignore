@@ -1,0 +1,4 @@
+./extern/google/*
+build/*
+.vscode/*
+.cache/*

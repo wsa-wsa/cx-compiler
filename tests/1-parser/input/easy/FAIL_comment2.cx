@@ -1,0 +1,5 @@
+// cx dont support comment like that
+
+int main(void){
+    return 0;
+}

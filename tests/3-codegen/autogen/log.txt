@@ -1,0 +1,60 @@
+==========../../testcases_general/1-return.cx==========
+0								0
+==========../../testcases_general/2-decl_int.cx==========
+0								0
+==========../../testcases_general/3-decl_float.cx==========
+0								0
+==========../../testcases_general/4-decl_int_array.cx==========
+0								0
+==========../../testcases_general/5-decl_float_array.cx==========
+0								0
+==========../../testcases_general/6-num_add_int.cx==========
+210								210
+==========../../testcases_general/7-assign_int_var_local.cx==========
+210								210
+==========../../testcases_general/8-assign_int_array_local.cx==========
+call void @neg_idx_except()
+call void @neg_idx_except()
+210								210
+==========../../testcases_general/9-assign_cast.cx==========
+%op6 = fadd float %op5, 0x4003333340000000
+%op5 = sitofp i32 2 to float
+0x4003333340000000
+5								5
+==========../../testcases_general/10-funcall.cx==========
+call void @test(i32 %op2)
+0								0
+==========../../testcases_general/11-funcall_chain.cx==========
+%op1 = call i32 @addone(i32 1230)
+%op2 = call i32 @addone(i32 %op1)
+%op3 = call i32 @addone(i32 %op2)
+%op4 = call i32 @addone(i32 %op3)
+210								210
+==========../../testcases_general/12-funcall_recursion.cx==========
+%op7 = call i32 @factorial(i32 %op6)
+%op1 = call i32 @factorial(i32 10)
+0								0
+==========../../testcases_general/13-if_stmt.cx==========
+0								0
+==========../../testcases_general/14-while_stmt.cx==========
+0								0
+==========../../testcases_general/15-if_while.cx==========
+45								45
+==========../../testcases_general/16-if_chain.cx==========
+3								3
+==========../../testcases_general/17-while_chain.cx==========
+0								0
+==========../../testcases_general/18-global_var.cx==========
+10								10
+==========../../testcases_general/19-global_local_var.cx==========
+call void @GlobalAssign()
+20								20
+==========../../testcases_general/20-gcd_array.cx==========
+%op15 = call i32 @gcd(i32 %op7, i32 %op14)
+%op26 = call i32 @gcd(i32 %op24, i32 %op25)
+call void @neg_idx_except()
+%op8 = call i32 @funArray(i32* %op6, i32* %op7)
+call void @neg_idx_except()
+18								18
+==========../../testcases_general/21-comment.cx==========
+0								0
